@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="./style.css">
+        <title>Document</title>
+        <script>
+            // calc
+            function cal(value) {
+                var qty = document.getElementById("qty").value;
+                var rate = document.getElementById("rate").value;
+                
+                var amt = qty * rate;
+                document.getElementById("amt").value = amt;
+                document.getElementById("actual_price").value = amt;
+
+            // GST
+            var sgst = document.getElementById("sgst_value").value;
+            var cgst = document.getElementById("cgst_value").value;
+            var gst = sgst + cgst;
+            var actual_value = document.getElementById("actual_price").value;
+
+            // print gst
+                var gst = actual_value * 18 / 100;
+                document.getElementById("sgst_value").value = gst / 2;
+                document.getElementById("cgst_value").value = gst / 2;
+
+            // grand total
+                var final_value = amt + gst;
+                document.getElementById("final_price").value = final_value;
+            }
+    </script>    
+</head>
+<body>
+    <button onclick="window.print();">
+        print
+    </button>
+    <br>
+    
+    <div class="main">
+        <div class="details">
+            <div class="title">
+                <h4> TAX / RETAIL INVOICE 
+                </h4>
+                <P> (M) 9426486912 </P>
+            </div>
+            <div class="heading">
+                <h1> RAHUL ENTERPRISE </h1>
+                <P> ALL KIND OF SCRAP, BARRELS, DRUMS, & TINS
+                    AND GOODS MERCHANTS, COMMISSION AGENTS 
+                </P>
+            </div>
+        </div>
+        <div class="add">
+            <p> Plot No. : 55/A, Navdurga Industrial Park, Post : Sankarda, Dist : Vadodara - 391 350 Gujarat.</p>
+        </div>
+        <!-- product details -->
+        <div class="issue">
+            <div class="col-1">
+                <div class="to">
+                    <label> M/s.: </label> <textarea class="textarea-1"></textarea>
+                </div>
+                <br>
+                <div class="gst">
+                    <label>GST TIN : </label><textarea class="textarea-2"></textarea>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="column-1">
+                    <p class="invoice"> Invoice No. <span class="sp1"> : </span>  <input type="number" value="65"> </p> 
+                    <hr class="col1-hr">
+                    <p class="date"> Date <span class="sp2"> : </span>  <textarea class="textarea-date" id="livedate"></textarea> </p>
+                    <hr class="col1-hr">
+                </div>
+                <div class="column-3">
+                    <p class="vehicle"> Vehicle No. <span class="sp3"> : </span> <textarea></textarea> </p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- PRODUCT -->
+        <div class="product">
+            <div class="col1">
+                <p> Sr. No.</p>
+                <hr>
+                <input type="number" value="01">
+            </div>
+            <div class="col2">
+                <p> Description </p>
+                <hr>
+                <textarea class="textarea-3"></textarea>
+            </div>
+            <div class="col3">
+                <p> Qty </p>
+                <hr>
+                <input type="text" class="textarea-4" id="qty" onkeyup="cal(value);">
+                <select class="type">
+                    <option> KGS </option>
+                    <option> NOS </option>
+                </select>
+            </div>
+            <div class="col4">
+                <p> Rate </p>
+                <hr>
+                <input type="text" id="rate" onkeyup="cal(value);">
+            </div>
+            <div class="col5">
+                <p> Per</p>
+                <hr>
+                <p class="col5-p" style="text-align: right; font-size: 26px;"> = </p>
+            </div>
+            <div class="col6">
+                <p> Amount Rs. </p>
+                <hr>
+                <input type="text" id="amt" readonly>
+            </div>
+        </div>
+        <div class="cal">
+            <div class="rupeinword">
+                <div class="rupe-con">
+                    <label> Rupees:
+                    </label> <textarea class="rupe"></textarea>
+                </div>   
+                <hr class="own-hr">
+                <DIV class="own">
+                    <p> GST TIN : 24AGKPC9805H1ZG </p>      <br>
+                    <br>
+                    <br>
+                    <P>Subject to Baroda Jurisdiction</P>
+                </DIV>
+            </div>
+            <div class="tax">
+                <p> Sub Total </p><br>
+                <hr>
+                <p>S GST    9%</p><br>
+                <hr>
+                <p>C GST    9%</p><br>
+                <hr>
+                <p> GRAND TOTAL </p>
+            </div>
+            <div class="num">
+                <p><input type="number" id="actual_price"  readonly></p>
+                <hr>
+                <p><input type="number" id="sgst_value" readonly> </p>
+                <hr>
+                <p> <input type="number" id="cgst_value" readonly> </p>
+                <hr>
+                <p> <input type="number" id="final_price" readonly> </p>
+            </div>
+        </div>
+        <div class="permission">
+            <p> FOR, RAHUL ENTERPRISE</p>
+            <br>
+            <br>
+            <br>
+            <P> Authorised Signatory</P>
+            
+        </div>
+    </div>
+    <script>
+        var d = new Date();
+        document.getElementById("livedate").innerHTML = d.getDate() + " " + '/' + " " + [d.getMonth() + 1] + " " + '/' + " " + d.getFullYear();
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,341 @@
+* {box-sizing: border-box; margin: 0;}
+
+/* *******main */
+.main {
+    max-width:  1200px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    margin-top: 16px;
+}
+/* *********head */
+.details {
+    text-align: center;
+    border: 2px solid black;
+    padding: 12px 24px;
+}
+.title h4, p {
+    display: inline-block;
+}
+.title h4 {
+    text-align: center;
+    margin-left: 224px;
+    font-size: 32px;
+}
+.title p {
+    float: right;
+    font-size: 32px;
+}
+.left {
+    float: left!important;
+}
+/* **********heading */
+.heading p {
+    max-width: 750px;
+    font-size: 32px;
+}
+.heading h1 {
+    font-size: 94px;
+    letter-spacing: 3px;
+} 
+.add {
+    border: 2px solid black;
+    border-top: none;
+    padding: 4px 0px;
+    text-align: center;
+    font-size: 28px;
+}
+/* *******product details */
+.issue {
+    content: "";
+    display: table;
+    clear: both;
+    display: flex;
+}
+.col-1 {
+    float: left;
+}
+.col-2 {
+    float: right;
+}
+.col-1 {
+    width: 49.99999%;
+    border: 2px solid black;
+    margin: 4px 2PX 2PX 0px;
+    padding: 10px 16px;
+}
+.col-2 {
+    width: 49.99999%;
+    border: 2px solid black;
+    margin: 4px 0px 2px 2px;
+    padding: 10px 16px;
+}
+.col-1 label {
+    justify-self: start;
+}
+.to {
+    display: flex;
+    align-items: start;
+    font-size: 28px;
+}
+.textarea-1 {
+    border: none;
+    width: 90%;
+    height: 180px;
+    resize: none;
+    overflow: hidden;
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 8px;
+    word-spacing: 5px;
+}
+.gst {
+    display: flex;
+    align-items: flex-start;
+    font-size: 28px;
+}
+.textarea-2 {
+    height: 36px;
+    border: none;
+    resize: none;
+    margin-left: 8px;
+    font-size: 28px;
+    font-family: sans-serif;
+}
+.col1-hr {
+    margin: 20px 0;
+}
+.column-1 input {
+    resize: none;
+    border: none;
+    height: 40px;
+    font-size: 28px;
+    font-family: sans-serif;
+    margin: 0 10px;
+    width: 50%; 
+}
+.column-1 p {
+    margin: 20px 0;
+}
+.invoice {
+    display: flex;
+    align-items: flex-start;
+    font-size: 28px;
+}
+.date {
+    display: flex;
+    align-items: flex-start;
+    font-size: 28px;
+}
+.textarea-date {
+    font-size: 28px;
+    margin: 0 10px;
+    resize: none;
+    border: none;
+    height: 40px;
+    font-family: sans-serif;
+    width: 50%; 
+}
+.sp1 {
+    margin-left: 53px;
+}
+.sp2 {
+    margin-left: 132px;
+}
+.sp3 {
+    margin-left: 52px;
+}
+.vehicle {
+    display: flex;
+    align-items: flex-start;
+    font-size: 28px;
+}
+.column-3 textarea {
+    resize: none;
+    border: none;
+    height: 40px;
+    font-size: 28px;
+    font-family: sans-serif;
+    margin: 0 10px;
+    width: 50%; 
+}
+/* ***************PRODUCT */
+.product {
+    content: " ";
+    display: table;
+    clear: both;
+    width: 100%;
+    text-align: center;
+    margin-top: 2px;
+    border: 2px solid black;
+    height: 300px;
+}
+.col1, .col2, .col3, .col4, .col5, .col6 {
+    float: left;
+}  
+.col1, .col2, .col3, .col4, .col5, .col6 p {
+    font-size: 28px;
+
+}
+.col1, .col2, .col3, .col4, .col5 {
+    border-right: 2px solid black;
+    height: 500px;
+} 
+.col1 {
+    width: 10%;
+}
+.col1 input {
+    width: 90%;
+    border: none;
+    text-align: center;
+    margin: 16px 0;
+    font-size: 22px;
+}
+.col2 {
+    width: 40%;
+}
+.col2 .textarea-3 {
+    width: 90%;
+    border: none;
+    height: 450px;
+    margin: 10px 0;
+    font-size: 34px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    resize: none;
+}
+.col3 {
+    width: 10%;
+}
+.col3 .textarea-4 {
+    width: 90%;
+    text-align: center;
+    border: none;
+    margin: 10px 0;
+    height: 30px;
+    font-size: 22px;
+    resize: none;
+    font-family: sans-serif;
+} 
+.type {
+    border: none;
+    background-color: white;
+    appearance: none;
+    font-size: 20px;
+}
+.col4 {
+    width: 10%;
+}
+.col4 input {
+    width: 90%;
+    text-align: center;
+    border: none;
+    margin: 10px 0;
+    font-size: 22px;
+    resize: none;
+    font-family: sans-serif;
+}
+.col5 {
+    width: 10%;
+}
+.col5-p {
+    text-align: right!important;
+    font-size: 16px;
+    margin: 10px 0;
+}
+.col6 {
+    width: 20%;
+}
+.col6 input {
+    width: 90%;
+    text-align: center;
+    border: none;
+    margin: 10px 0;
+    font-size: 22px;
+    resize: none;
+}
+hr {
+    border: 1px solid black;
+}
+/* ************ rupees  */
+.cal {
+    display: flex;
+}
+.rupeinword {
+    border: 2px solid black;
+    border-top: none;
+    width: 60%;
+    float: left;
+}
+.rupe-con {
+    padding: 8px 16px;
+    display: flex;
+    align-items: flex-start;
+    font-size: 26px;
+    padding-top: 12PX;
+}
+.rupe {
+    width: 90%;
+    height: 112px;
+    margin-left: 10px;
+    font-size: 24px;
+    resize: none;
+    border: none;
+    line-height: 1.5;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.own {
+    padding: 8px 16px;
+    font-size: 20px;
+}
+.own-hr {
+    margin: 10px 0;
+}
+.tax {
+    float: left;
+    width: 19.9%;
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+    text-align: center;
+    font-size: 28px;
+}
+.tax p {
+    padding: 19px 0;
+}
+.num {
+    width: 20.1%;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+    overflow: hidden;
+}
+.num p {
+    padding: 21px 0px;
+    text-align: center;
+}
+.num input {
+    border: none;
+    overflow: hidden;
+    font-size: 22px;
+    text-align: center;
+    width: 90%;
+}
+/* *********** PERMISSION */
+.permission {
+    float: right;
+    margin: 4px 0;
+}
+.permission p {
+    font-size: 22px;
+}
+/* ***********print button */
+button {
+    margin: 0 500px;
+    font-size: 32px;
+}
+@media print {
+    body * {
+        visibility: hidden;
+    }
+    .main, .main * {
+        visibility: visible;
+    }
+}
