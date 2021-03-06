@@ -3,14 +3,14 @@
 /* *******main */
 .main {
     max-width:  1200px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: auto!important;
+    margin-right: auto!important;
     overflow: hidden;
     margin-top: 16px;
 }
 @media screen and (max-width:601px) {
     .main {
-        width: 300%;
+        max-width: 90%;
     }
 }
 /* *********head */
@@ -22,14 +22,32 @@
 .title h4, p {
     display: inline-block;
 }
+@media screen and (max-width:601px) {
+    .title h4, p {
+        display: inline-block!important;
+    }
+}
 .title h4 {
     text-align: center;
     margin-left: 224px;
     font-size: 32px;
 }
+@media screen and (max-width:601px) {
+    .title h4 {
+        font-size: 10px!important;
+        text-align: center!important;
+        margin-left: 42px;
+    }
+}
 .title p {
     float: right;
     font-size: 32px;
+}
+@media screen and (max-width:601px) {
+    .title p {
+        font-size: 10px!important;
+        margin-right: -13px;
+    }
 }
 .left {
     float: left!important;
@@ -39,16 +57,33 @@
     max-width: 750px;
     font-size: 32px;
 }
+@media screen and (max-width:601px) {
+    .heading p {
+        font-size: 13.5px!important;
+    }
+}
 .heading h1 {
     font-size: 94px;
     letter-spacing: 3px;
 } 
+@media screen and (max-width:601px) {
+    .heading h1 {
+        font-size: 26px!important;
+    }
+}
 .add {
     border: 2px solid black;
     border-top: none;
     padding: 4px 0px;
     text-align: center;
     font-size: 28px;
+}
+@media screen and (max-width:601px) {
+    .add {
+        font-size: 9px;
+        padding: 2px 0px;
+
+    }
 }
 /* *******product details */
 .issue {
@@ -69,11 +104,21 @@
     margin: 4px 2PX 2PX 0px;
     padding: 10px 16px;
 }
+@media screen and (max-width:601px) {
+    .col-1 {
+        padding: 5px 8px;
+    }
+}
 .col-2 {
     width: 49.99999%;
     border: 2px solid black;
     margin: 4px 0px 2px 2px;
     padding: 10px 16px;
+}
+@media screen and (max-width:601px) {
+    .col-2 {
+        padding: 5px 8px;
+    }
 }
 .col-1 label {
     justify-self: start;
@@ -82,6 +127,13 @@
     display: flex;
     align-items: start;
     font-size: 28px;
+}
+@media screen and (max-width:601px) {
+    .to {
+        display: flex;
+        align-items: start;
+        font-size: 14px;
+    }   
 }
 .textarea-1 {
     border: none;
@@ -94,10 +146,23 @@
     margin-left: 8px;
     word-spacing: 5px;
 }
+@media screen and (max-width:601px) {
+    .textarea-1 {
+        font-size: 15px;
+        height: 90px;
+    }   
+}
 .gst {
     display: flex;
     align-items: flex-start;
     font-size: 28px;
+}
+@media screen and (max-width:601px) {
+    .gst {
+        display: flex;
+        align-items: start;
+        font-size: 14px;
+    }   
 }
 .textarea-2 {
     height: 36px;
@@ -107,8 +172,20 @@
     font-size: 28px;
     font-family: sans-serif;
 }
+@media screen and (max-width:601px) {
+    .textarea-2 {
+        font-size: 14px;
+        height: 18px;
+        margin-left: ;
+    }   
+}
 .col1-hr {
     margin: 20px 0;
+}
+@media screen and (max-width:601px) {
+    .col1-hr {
+        margin: 10px 0;
+    }
 }
 .column-1 input {
     resize: none;
@@ -119,18 +196,44 @@
     margin: 0 10px;
     width: 50%; 
 }
+@media screen and (max-width:601px) {
+    .column-1 input {
+        height: 20px;
+        /* margin: 0 5px; */
+        font-size: 14px;
+    }
+}
 .column-1 p {
     margin: 20px 0;
+}
+@media screen and (max-width:601px) {
+    .column-1 p {
+        margin: 10px 0;
+    }   
 }
 .invoice {
     display: flex;
     align-items: flex-start;
     font-size: 28px;
 }
+@media screen and (max-width:601px) {
+    .invoice {
+        display: flex;
+        align-items: flex-start;
+        font-size: 14px;
+    }   
+}
 .date {
     display: flex;
     align-items: flex-start;
     font-size: 28px;
+}
+@media screen and (max-width:601px) {
+    .date {
+        display: flex;
+        align-items: flex-start;
+        font-size: 14px;
+    }   
 }
 .textarea-date {
     font-size: 28px;
@@ -141,19 +244,46 @@
     font-family: sans-serif;
     width: 50%; 
 }
+@media screen and (max-width:601px) {
+    .textarea-date {
+        font-size: 14px;
+        /* margin: 0 10px; */
+        height: 20px;
+    }
+}
 .sp1 {
     margin-left: 53px;
+}
+@media screen and (max-width:601px) {
+    .sp1 {
+        margin-left: 5px;
+    }   
 }
 .sp2 {
     margin-left: 132px;
 }
+@media screen and (max-width:601px) {
+    .sp2 {
+        margin-left: 10px;
+    }   
+}
 .sp3 {
     margin-left: 52px;
+}
+@media screen and (max-width:601px) {
+    .sp3 {
+        margin-left: 10px;
+    }   
 }
 .vehicle {
     display: flex;
     align-items: flex-start;
     font-size: 28px;
+}
+@media screen and (max-width:601px) {
+    .vehicle {
+        font-size: 14px;
+    }
 }
 .column-3 textarea {
     resize: none;
@@ -163,6 +293,12 @@
     font-family: sans-serif;
     margin: 0 10px;
     width: 50%; 
+}
+@media screen and (max-width:601px) {
+    .column-3 textarea {
+        font-size: 14px;
+        height: 20px;
+    }
 }
 /* ***************PRODUCT */
 .product {
@@ -180,7 +316,7 @@
 }  
 .col1, .col2, .col3, .col4, .col5, .col6 p {
     font-size: 28px;
-
+    
 }
 .col1, .col2, .col3, .col4, .col5 {
     border-right: 2px solid black;
