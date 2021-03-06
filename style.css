@@ -10,7 +10,7 @@
 }
 @media screen and (max-width:601px) {
     .main {
-        width: 1000px;
+        width: 300%;
     }
 }
 /* *********head */
