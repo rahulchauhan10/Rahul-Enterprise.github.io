@@ -8,6 +8,11 @@
     overflow: hidden;
     margin-top: 16px;
 }
+@media screen and (max-width:601px) {
+    .main {
+        max-width: 500px;
+    }
+}
 /* *********head */
 .details {
     text-align: center;
