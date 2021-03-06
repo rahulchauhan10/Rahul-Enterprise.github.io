@@ -10,7 +10,7 @@
 }
 @media screen and (max-width:601px) {
     .main {
-        max-width: 90%;
+        width: 100%;
     }
 }
 /* *********head */
@@ -471,6 +471,12 @@ hr {
 button {
     margin: 0 500px;
     font-size: 32px;
+}
+@media screen and (max-width:601px) {
+    button {
+        margin: 10px 50px;
+
+    }
 }
 @media print {
     body * {
